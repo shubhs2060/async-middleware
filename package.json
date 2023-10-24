@@ -1,6 +1,6 @@
 {
-  "name": "async-middleware",
-  "version": "1.0.0",
+  "name": "escape-try-catch",
+  "version": "1.0.1",
   "description": "middleware to handle errors",
   "main": "index.js",
   "scripts": {
