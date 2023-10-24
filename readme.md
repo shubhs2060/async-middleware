@@ -1,4 +1,4 @@
-# Foobar
+# Escape-Try-Catch
 
 Escape-Try-Catch is an npm package that helps you in escaping the traditional try catch mechanism . You can freely write your code without thinking of error handling for your async calls
 
