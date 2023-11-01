@@ -1,11 +1,21 @@
 {
   "name": "escape-try-catch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "middleware to handle errors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "shubham",
+  "keywords": [
+    "promise",
+    "async",
+    "errorhandler",
+    "middleware",
+    "trycatch",
+    "try",
+    "UnhandledPromiseRejectionWarning",
+    "PromiseRejectionHandledWarning"
+  ],
   "license": "ISC"
 }
