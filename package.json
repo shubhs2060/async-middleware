@@ -17,5 +17,8 @@
     "UnhandledPromiseRejectionWarning",
     "PromiseRejectionHandledWarning"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ms-teams-webhook": "^2.0.2"
+  }
 }
