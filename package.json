@@ -1,6 +1,6 @@
 {
   "name": "escape-try-catch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "middleware to handle errors",
   "main": "index.js",
   "scripts": {
