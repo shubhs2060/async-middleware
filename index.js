@@ -24,8 +24,8 @@ module.exports = {
                     var message = `${error.message} for path ${req.originalUrl}`
                 }
                 let body = null;
-                if(req.body){
-                    body = `${JSON.stringify(req.body)}`
+                if(req.body && req.files){
+                    body = `${JSON.stringify(req.body) + req.files[0]} `
                 }else if(req.body){
                     body = `${JSON.stringify(req.body)}`
                 }else{
@@ -34,13 +34,13 @@ module.exports = {
                 await webhook.send({
                     "@type": "MessageCard",
                     "@context": "https://schema.org/extensions",
-                    "summary": `${ req.error.message || "Async Teams Error"}`,
+                    "summary": "Async Teams Error",
                     "themeColor": "0078D7",
                     "title": message,
                     "sections": [
                         {
                         "activityTitle": "Async Teams Error",
-                        "activitySubtitle": `${ options.NODE_ENV || "dev"}`,
+                        "activitySubtitle": `${ options.NODE_ENV || "DEV"}`,
                         "activityImage": "https://cdn-icons-png.flaticon.com/512/2103/2103533.png",
                         "text": body
                         }
