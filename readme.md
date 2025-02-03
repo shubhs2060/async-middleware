@@ -1,7 +1,8 @@
 # Escape-Try-Catch
 
-Escape-Try-Catch is an npm package that helps you in escaping the traditional try catch mechanism . You can freely write your code without thinking of error handling for your async calls.
-New Versions also updated with MS Teams Middleware so you can utilize it to alert your messages on teams channel.
+Escape-Try-Catch is an npm package that helps you escape the traditional try-catch mechanism. It allows you to write code freely without worrying about handling errors in your async calls.
+
+The latest versions also include MS Teams Middleware, enabling you to send alerts to a Teams channel effortlessly.
 
 ## Installation
 
@@ -13,7 +14,7 @@ npm install escape-try-catch
 
 ## Usage
 
-```python
+```javascript
 const { asyncMiddleware } = require("escape-try-catch")
 
 
@@ -31,9 +32,11 @@ getUser: async function(req,res) {
 
 ```
 
-Async Teams Middleware
+## Async Teams Middleware
+
 You can use this same as Async middleware . This middleware will send an alert on teams as if it catches a error in a request . In here you need to sepcify the following details like this
-```python
+
+```javascript
 const { asyncTeamsErrorMiddleware } = require("escape-try-catch")
 
 

@@ -18,10 +18,11 @@ module.exports = {
                 await handler(req,res);
             } catch (error) {
                 const webhook = new IncomingWebhook(options.MS_TEAM_WEBHOOK_URL);
+                let message = null
                 if(req.session && req.session.user != undefined){
-                    var message = `${error.message} for path ${req.originalUrl}` + " " + req.session.user.Email
+                    message = `${error.message} for path ${req.originalUrl}` + " " + req.session.user.Email
                 }else{
-                    var message = `${error.message} for path ${req.originalUrl}`
+                    message = `${error.message} for path ${req.originalUrl}`
                 }
                 let body = null;
                 if(req.body && req.files){
