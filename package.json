@@ -19,6 +19,6 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "ms-teams-webhook": "^2.0.2"
+    "ms-teams-webhook": "2.2.2"
   }
 }
